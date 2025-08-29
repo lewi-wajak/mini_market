@@ -1,5 +1,4 @@
 Product.create(name: "Bread", price: 500, category: "Food", image: "images/products/bread.jpg")
-Product.create(name: "Shoes", price: 4500, category: "Fashion", image: "images/products/shoes.jpg")
 Product.create(name: "Rice", price: 4000, category: "Food", image: "images/products/rice.jpg")
 Product.create(name: "Water", price: 100, category: "Drink", image: "images/products/water.jpg")
 Product.create(name: "Apple", price: 300, category: "Fruit", image: "images/products/apple.jpg")
