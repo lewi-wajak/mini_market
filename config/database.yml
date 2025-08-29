@@ -11,16 +11,17 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-production:
+production: &production
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   url: <%= ENV['DATABASE_URL'] %>
 
-  # Rails 8 needs these
-  cable:
-    <<: *production
-  queue:
-    <<: *production
-  cache:
-    <<: *production
+cable:
+  <<: *production
+
+queue:
+  <<: *production
+
+cache:
+  <<: *production
